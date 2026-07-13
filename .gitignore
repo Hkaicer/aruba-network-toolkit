@@ -1,0 +1,36 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+
+# Real device inventories (use *.csv.example templates instead)
+devices.csv
+devices2.csv
+switch.csv
+switches.csv
+
+# Collected data & logs
+data/
+data2/
+logs/
+ssh_outputs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db

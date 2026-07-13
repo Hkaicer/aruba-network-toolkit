@@ -1,0 +1,2 @@
+ip,username,password,api_version
+192.168.100.10,admin,changeme,v10.11
