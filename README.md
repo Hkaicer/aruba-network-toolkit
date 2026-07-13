@@ -67,7 +67,3 @@ Nothing sensitive lives here. Credentials and device inventories stay in local f
 ## See also
 
 [HPE Aruba NAE scripts](https://github.com/aruba/nae-scripts), the official collection of Network Analytics Engine scripts. Worth a look if you run CX switches.
-
-## License
-
-MIT
