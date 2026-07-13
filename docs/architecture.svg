@@ -1,0 +1,67 @@
+<svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4493f8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3fb950"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d29922"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <text x="440" y="28" text-anchor="middle" font-size="17" font-weight="600" fill="#8b949e">your machine on the left, your Aruba gear on the right</text>
+
+  <!-- Lane 1 : REST -->
+  <rect x="40" y="50" width="270" height="80" rx="10" fill="#4493f8" fill-opacity="0.08" stroke="#4493f8" stroke-width="1.5"/>
+  <text x="175" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#4493f8">diag-arubacx and diag-v2</text>
+  <text x="175" y="108" text-anchor="middle" font-size="12.5" fill="#8b949e">REST collectors, Flask API, dashboard</text>
+
+  <rect x="570" y="50" width="270" height="80" rx="10" fill="#4493f8" fill-opacity="0.08" stroke="#4493f8" stroke-width="1.5"/>
+  <text x="705" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#4493f8">Aruba CX switches</text>
+  <text x="705" y="108" text-anchor="middle" font-size="12.5" fill="#8b949e">REST API v10.11</text>
+
+  <line x1="318" y1="90" x2="562" y2="90" stroke="#4493f8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="440" y="80" text-anchor="middle" font-size="12.5" fill="#8b949e">HTTPS REST</text>
+
+  <!-- Lane 2 : SSH -->
+  <rect x="40" y="160" width="270" height="80" rx="10" fill="#3fb950" fill-opacity="0.08" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="175" y="194" text-anchor="middle" font-size="16" font-weight="600" fill="#3fb950">ssh-tools</text>
+  <text x="175" y="218" text-anchor="middle" font-size="12.5" fill="#8b949e">Streamlit, Flask web UI or plain CLI</text>
+
+  <rect x="570" y="160" width="270" height="80" rx="10" fill="#3fb950" fill-opacity="0.08" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="705" y="194" text-anchor="middle" font-size="16" font-weight="600" fill="#3fb950">Switch fleet</text>
+  <text x="705" y="218" text-anchor="middle" font-size="12.5" fill="#8b949e">one CSV inventory, many devices</text>
+
+  <line x1="318" y1="200" x2="562" y2="200" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="440" y="190" text-anchor="middle" font-size="12.5" fill="#8b949e">SSH with Netmiko</text>
+
+  <!-- Lane 3 : scheduled monitor -->
+  <rect x="40" y="270" width="270" height="80" rx="10" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1.5"/>
+  <text x="175" y="304" text-anchor="middle" font-size="16" font-weight="600" fill="#d29922">ap-monitor</text>
+  <text x="175" y="328" text-anchor="middle" font-size="12.5" fill="#8b949e">runs hourly via cron or Task Scheduler</text>
+
+  <rect x="570" y="270" width="270" height="80" rx="10" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1.5"/>
+  <text x="705" y="304" text-anchor="middle" font-size="16" font-weight="600" fill="#d29922">Mobility controllers</text>
+  <text x="705" y="328" text-anchor="middle" font-size="12.5" fill="#8b949e">show ap database long status down</text>
+
+  <line x1="318" y1="310" x2="562" y2="310" stroke="#d29922" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="440" y="300" text-anchor="middle" font-size="12.5" fill="#8b949e">SSH, on a schedule</text>
+
+  <!-- Outputs -->
+  <rect x="40" y="400" width="270" height="58" rx="10" fill="#8b949e" fill-opacity="0.08" stroke="#8b949e" stroke-width="1.5"/>
+  <text x="175" y="424" text-anchor="middle" font-size="15" font-weight="600" fill="#8b949e">Reports on disk</text>
+  <text x="175" y="444" text-anchor="middle" font-size="12.5" fill="#8b949e">JSON, TXT, CSV and Excel</text>
+
+  <line x1="175" y1="356" x2="175" y2="394" stroke="#8b949e" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <rect x="570" y="400" width="270" height="58" rx="10" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1.5"/>
+  <text x="705" y="424" text-anchor="middle" font-size="15" font-weight="600" fill="#d29922">Alert and daily report email</text>
+  <text x="705" y="444" text-anchor="middle" font-size="12.5" fill="#8b949e">threshold, cooldown, CSV attached</text>
+
+  <line x1="705" y1="356" x2="705" y2="394" stroke="#d29922" stroke-width="2" marker-end="url(#arrowOrange)"/>
+</svg>
